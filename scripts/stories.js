@@ -29,7 +29,7 @@ slider.addEventListener("mousemove", (e) => {
   slider.scrollLeft = scrollLeft - walk;
 });
 
-// 모바일 터치 지원
+// 모바일 지원
 slider.addEventListener("touchstart", (e) => {
   isDown = true;
   startX = e.touches[0].pageX - slider.offsetLeft;
@@ -46,3 +46,4 @@ slider.addEventListener("touchmove", (e) => {
   const walk = (x - startX) * 1.5;
   slider.scrollLeft = scrollLeft - walk;
 });
+
