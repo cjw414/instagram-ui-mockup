@@ -1,0 +1,33 @@
+.stories:active {
+  cursor: grabbing;
+}
+
+.stories {
+  touch-action: pan-x;
+}
+
+.story span {
+  pointer-events: none; /* 드래그 시 글자 선택 방지 */
+}
+
+/* 기본 하트 */
+.post-icons i.fa-heart {
+  color: #000; /* 기본 색 */
+  transition: transform 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+/* 클릭 시 확대 애니메이션 */
+.post-icons i.fa-heart.liked {
+  color: #ed4956; /* 빨간색 */
+  transform: scale(1.3);
+}
+
+
+
+
+
+
+
+
+
